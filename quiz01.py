@@ -3,9 +3,10 @@
 # Quiz 1
 
 # Q6
+import math
 
 def f(x):
-    y = -5*x^5 + 69*x^2 - 47
+    y = -5*math.pow(x,5) + 69*math.pow(x,2) - 47
     return y
     
 print f(0)
@@ -33,10 +34,10 @@ print "$1000 at 2% compounded daily for 3 years yields $", future_value(1000, .0
 import math
 
 def polygon_area(n, s):
-	area = (.25 * n * s^2) / tan(pi/n)
-	return area
-	
-print polygon_area(7,5)
+    area = (.25 * n * math.pow(s,2)) / math.tan((math.pi/n))
+    return area
+    
+print polygon_area(7,3)
 
 # Q10
 
